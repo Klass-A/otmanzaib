@@ -1,0 +1,253 @@
+/* ==== GLOBAL ==== */
+body {
+	font-family: "TR Avalon", sans-serif;
+}
+/* ==== GENERAL ==== */
+.container-fluid {padding-left: 0; padding-right: 0}
+a { color: white; text-decoration: none; }
+
+
+/* ==== HERO ==== */
+header h1 {font-size: 130px;}
+header h1 span {color: #a43ed6;}
+header h2 {font-size: 44px;color: #626a80; line-height: 80px; margin-bottom: 75px;}
+header h2 mark {background: #353452; color: #fbfbfb}
+.hero {
+	background: url(../img/mountains.png) no-repeat top left;
+	background-size: cover;
+	min-height: 600px;
+    min-height: 99vh;
+    font-family: "BlowBrush";
+}
+.deco {
+	width: 100%;
+	height: 7px;
+	background-image: linear-gradient(to right, #626a80 25%, #353452 25%);
+}
+.side {
+	transform: rotate(270deg);
+    float: right;
+    margin: -250px -70px 0px;
+    font-size: 16px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    padding: 1px 3px;}
+
+.side:hover {background: #a43ed6; color: #fff;}
+
+.arrow {
+    font-size: 54px;
+    text-align: center;
+}
+.fa-angle-double-down {
+	cursor: pointer;
+	transition: all .3s;
+}
+.fa-angle-double-down:hover {
+	font-size: 62px;
+	color: #626a80;
+}
+
+/* Arrow Bounce */
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* ==== INFO SECTION ==== */
+.info {background: #fdfdfd; min-height: 100vh;}
+.info h2 {margin-top: 60px; font-size: 80px; color: #f1f1f1;}
+.infoBox {min-height: 400px; background: #F5F5F5;}
+.infoBox .par {font-size: 20px; color: #403d42; letter-spacing: 1.5px;
+    border-bottom: 3px solid #89838c; width: 65px; margin: 35px auto;}
+.page {width: 37px;}
+.page p {font-size: 38px; border-bottom: 4px solid #a43ed6;}
+.infoBox .interests {line-height: 25px; display: inline-block; padding: 0 20px;}
+
+
+/* ==== SKILLS SECTION ==== */
+.skills {background: #fbfbfb; min-height: 100vh;}
+.skills h2 {margin-top: 40px; font-size: 80px; color: #f3f3f3;z-index: 200}
+.skillsBox {background: #f6f6f6; min-height: 400px; padding: 25px 40px 40px 40px;}
+.skillsBox .progress {height: 6px; background-color: #efefef;}
+.skillsBox .lead {margin-bottom: 17px; font-size: 20px; letter-spacing: 1.1px;}
+.progress-bar {background-color: #673AB7;}
+.skillsBox .circle {width: 80px; height: 80px; border-radius: 50%;
+    display: inline-block; margin: 0px 15px; border: 6px solid #ddd;}
+.skillsBox .sk {letter-spacing: 1px}
+
+/* ==== WORKS SECTION ==== */
+.works {background: #fbfbfb; min-height: 100vh;}
+.works h2 {margin-top: 60px; font-size: 80px; color: #f3f3f3;z-index: 200}
+.workBox {background: #f5f5f5; min-height: 400px;z-index: 100}
+.workBox .left {background: #ddd; height: 300px; margin-top: 20px}
+.workBox .right {background: #dddeee; height: 300px; margin-top: 20px}
+.workBox .right, .workBox .left {padding-top: 20px}
+.workBox .workA, .workB {min-height: 200px}
+.workBox .xx:after {
+	content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent #cccccc transparent transparent;
+    border-width: 10px;
+    position: absolute;
+    left: -20px;
+    top: 90px;
+}
+.workBox .yy:after {
+	content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent transparent #aaaaaa;
+    border-width: 10px;
+    position: absolute;
+    left: 0px;
+    top: 90px;
+}
+.workBox .lead {
+	width: 102px;
+    margin: auto;
+    border-bottom: 3px solid #a43ed6;
+    margin-bottom: 20px;
+}
+.workBox p {
+	width: 90%;
+	margin: auto;
+	
+}
+.workBox .descib {
+	font-size: 15px;
+}
+.button:hover i {
+	position: relative;
+    left: 5px;
+}
+
+
+/* ==== CONTACT SECTION ==== */
+.contact {background: #fbfbfb; min-height: 700px; padding-bottom: 40px;}
+.contact h2 {margin-top: 60px; font-size: 80px; color: #f3f3f3;z-index: 200}
+.contactBox {background: #f5f5f5; min-height: 400px;}
+.contactBox .left {background: #ddd; height: 300px; margin-top: 20px}
+.contactBox .right {background: #dddeee; height: 300px; margin-top: 20px}
+.contactBox .right, .workBox .left {padding-top: 20px}
+.contactBox form {padding-top: 20px; padding-bottom: 20px;}
+.works .button {
+	width: 112px;
+    background: aliceblue;
+    padding: 8px 0;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: all .3s;
+}
+.works .button p {letter-spacing: 2px; font-size: 12px;}
+.works .button:hover {
+	background: #9C27B0;
+    color: #fff;
+}
+.works .button:active { background: #801e91; color: #fff;}
+.contactBox .btn-default {width: 100%;margin-bottom: 10px;}
+.contactBox p {color: #f9e9f7; margin-top: 22px; font-size: 20px;}
+.socialMedia i {color: #e1bee7; text-align: center; padding: 5px 5px; cursor: pointer;}
+
+
+/* ==== FOOTER SECTION ==== */
+footer {width: 100%; min-height: 300px;}
+
+
+
+/* ---------- SLANTED FOOTER ----------*/
+
+
+.container2 {
+  padding-top: 60px;
+  background: #fbfbfb;
+}
+
+.main-container {
+    background: #721d9d;
+    position: relative;
+}
+
+.main-container:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -36px;
+    width: 100%;
+    height: 70px;
+    background: #721d9d;
+    -webkit-transform: skewY(2.5deg);
+    -moz-transform: skewY(2.5deg);
+    -ms-transform: skewY(2.5deg);
+    -o-transform: skewY(2.5deg);
+    transform: skewY(2.5deg);
+}
+
+.section {
+  margin: 10px auto 0 auto;
+  padding: 0 20px;
+  padding-bottom: 50px;
+  position: relative;
+  max-width: 600px;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- Media Queries ----------- */
+@media (max-width: 768px) {
+	.side {margin: -250px -150px 0px;
+	}
+}
+
+@media (max-width: 992px) {
+	header h1 {font-size: 110px;}
+	header h2 {font-size: 37px;}
+	.side {margin: -250px -165px 0 0;}
+	
+}
+
+@media (max-width: 768px) {
+	header h1 {font-size: 110px;}
+	header h2 {font-size: 37px;}
+	.side {margin: -250px -165px 0 0;}
+}
+
+@media (max-width: 590px) {
+	header h1 {font-size: 95px;}
+	header h2 {font-size: 30px;}
+	.side {margin: -250px -180px 0 0;}
+}
